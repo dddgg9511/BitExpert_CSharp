@@ -1,0 +1,2 @@
+< Predicate 대리자 >
+public delegate bool Predicate<in T>(T obj);

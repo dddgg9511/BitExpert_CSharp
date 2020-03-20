@@ -1,0 +1,4 @@
+< Expression-Bodied Member >
+	- C#의 속성이나 메서드는 보통 여러 문장(statement)들로 구성된 블럭을 실행함
+	- 속성이나 메서드의 Body 블럭이 간단한 경우, Statement Block을 사용하는 대신 간단한 함수식(expression)을 사용할 수 있는데, 이를 Expression-bodied member 표현이라함
+	- 이는 기존의 람다식과 유사한 것으로 속성이나 메서드 Body를 간략한 람다식처럼 표현한 것
