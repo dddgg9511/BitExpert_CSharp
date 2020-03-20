@@ -61,7 +61,7 @@ namespace _0319
         #endregion
         static void Main(string[] args)
         {
-            eventHandler();
+            arrayforLINq();
         }
         static void generic()
         {
@@ -426,6 +426,18 @@ namespace _0319
             Notify notify2 = new Notify(listener2.SomethingHappend);
             notifier.EnventOccured = (Notify)Delegate.Remove(notifier.EnventOccured, notify2);
             notifier.EnventOccured("Game Over");
+        }
+        #endregion
+        #region LINQ
+        static void arrayforLINq()
+        {
+            int[] numbers = { 9, 2, 6, 4, 5, 3, 7, 8, 1, 10 };
+            var result = from n in numbers
+                         where n % 2 == 0
+                         orderby n
+                         select n;
+            foreach (int n in result)
+                WriteLine($"짝수 : {n}");
         }
         #endregion
     }

@@ -1,0 +1,7 @@
+<LinQ>
+-Language Integrated Query
+	범위 변수		원본 데이터
+-from [query variable] in [data source] 절 부터 시작(IEnumerable<T> 인터페이스를 상속하는 형식)
+-where [조건]
+-orderby [정렬기준] [ascending | descending]
+-select [추출 데이터]
