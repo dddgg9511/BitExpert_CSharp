@@ -1,0 +1,3 @@
+< Monitor.Wait(), Monitor.Pulse() >
+	-저수준 동기화
+	반드시 lock 블록 안에서 호출

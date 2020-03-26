@@ -1,0 +1,6 @@
+< async, await >
+- async : 메소드, 이벤트처리기, 테스크, 람다식
+- async 로 한정되는 메소드는 반환형식이 Task, Task<TResult> 또는 void 여야 함
+- void async 타입 메소드는 호출 즉시 호출자에게 제어권 반환
+- Task, Task<Tresult> 타입 메소드는 메소드 내부에  await 연샂ㄴ자를 만나면 호출자에게 제어권 넘김
+	(await 연산자가 없으면 동기방식으로 진행)

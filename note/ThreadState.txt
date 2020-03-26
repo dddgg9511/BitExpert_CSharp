@@ -1,0 +1,16 @@
+[Flags]	ThreadState	열거형 멤버
+
+-Running				0
+-StopRequeseted			1
+-SuspendRequested		2
+-Background			4
+-unstarted			8
+-Stopped				16
+-WaitSleepJoin			32
+-Suspended			64
+-AbortRequested			128
+-Aborted				256
+
+ex)
+if (t1.ThreadState & ThreadState.Aborted==
+ThreadState.Aborted)
